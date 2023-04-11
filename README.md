@@ -1,6 +1,6 @@
 # onboarding-2
 
-Create onboarding PR. Update baseBranch with new deps. Add `renovate.json` to create conflict.
+Create onboarding PR. Update baseBranch with new deps. Modify `chartfile.yaml` to create conflict.
 
 ## Expectations:
   - Updates PR body to show new deps without rebasing
