@@ -10,4 +10,4 @@ Create onboarding PR. Update baseBranch with new deps. Modify `chartfile.yaml` t
   - Updates PR body to show new deps without rebasing
   - Adds a comment to inform user about conflict
   
-## Relevant logs:
+## Relevant logs
