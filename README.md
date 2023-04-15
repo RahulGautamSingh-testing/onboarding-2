@@ -25,14 +25,12 @@ DEBUG: PR updated...prNo: 1 (repository=RahulGautamSingh-testing/onboarding-2)
 ```
 
 ### Third run
-*note: onboardingBranch & baseBranch has been modified & now there is a conflict
+*note: onboardingBranch has been modified & now there is a conflict
 ```log
-// since baseBranch cache is invalid for isOnboarded()
-DEBUG: isOnboarded() (repository=RahulGautamSingh-testing/onboarding-2)
-DEBUG: Checking cached config file name (repository=RahulGautamSingh-testing/onboarding-2)
+DEBUG: branch.isModified(): using git to calculate (repository=RahulGautamSingh-testing/onboarding-2)
 ...
-// fall back to git & extract cache removed
-DEBUG: Onboarding PR already exists (repository=RahulGautamSingh-testing/onboarding-2)
+DEBUG: branch.isModified() = true (repository=RahulGautamSingh-testing/onboarding-2)
+..
 DEBUG: Onboarding branch modified. Removing outdated extract cache for branch=main (repository=RahulGautamSingh-testing/onboarding-2)
 DEBUG: isBranchConflicted(main, renovate/configure) (repository=RahulGautamSingh-testing/onboarding-2)
 DEBUG: branch.isConflicted(): using git to calculate (repository=RahulGautamSingh-testing/onboarding-2)
@@ -42,17 +40,9 @@ DEBUG: setCachedConflictResult(): Branch cache not present (repository=RahulGaut
 DEBUG: branch.isConflicted(): true (repository=RahulGautamSingh-testing/onboarding-2)
 DEBUG: Update Onboarding Cache (repository=RahulGautamSingh-testing/onboarding-2)
        "onboardingCache": {
-         "defaultBranchSha": "03556a031fd020ec72ed3047ef2cc31a4af7f7fc",
-         "onboardingBranchSha": "ca66228ac1f42b07de209d06b5c9adf9faa1268b",
-         "isConflicted": true
+         "defaultBranchSha": "2d6a72c976d2581a6e14fcb67f34454225986696",
+         "onboardingBranchSha": "0360d7485a8778b26b935be19e629c9dcb3080ef",
+         "isConflicted": true,
+         "isModified": true
        }
-...
-DEBUG: Update Onboarding Cache (repository=RahulGautamSingh-testing/onboarding-2)
-       "onboardingCache": {
-         "defaultBranchSha": "03556a031fd020ec72ed3047ef2cc31a4af7f7fc",
-         "onboardingBranchSha": "ca66228ac1f42b07de209d06b5c9adf9faa1268b",
-         "isConflicted": true // updated 
-       }
-...
-// FAULT DETECTED...WIP
 ```
